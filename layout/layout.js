@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "./layout.module.css";
 
@@ -6,7 +7,16 @@ export default function Layout({ children }) {
     <div>
       <header>
         <ul>
-          <li>Home</li>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog/articles">
+              <a>Liste des articles</a>
+            </Link>
+          </li>
         </ul>
       </header>
 

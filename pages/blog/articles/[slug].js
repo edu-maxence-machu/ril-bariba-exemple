@@ -1,5 +1,6 @@
 import React from "react";
 import Error from "next/error";
+import Layout from "../../../layout/layout";
 
 export default function Articleblog({ errorCode, data }) {
   if (errorCode) {
@@ -7,9 +8,9 @@ export default function Articleblog({ errorCode, data }) {
   }
 
   return (
-    <div>
+    <Layout>
       <h1>{data.attributes.Titre}</h1>
-    </div>
+    </Layout>
   );
 }
 
